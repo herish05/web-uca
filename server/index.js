@@ -1,6 +1,7 @@
 import express from 'express'
 const app=express();
-app.use(express.static('public'))
-app.listen((5000),()=>{
+const port=5000;
+app.use(express.static('frontend'))
+app.listen(port,()=>{
     console.log("Server is running")
 })
